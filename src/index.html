@@ -1,14 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+      
+  <div class="contenedor">
+   <section class="tarjeta" id="tarjeta">
+     <div class="frontal">
+      <div class="visa">
+       <img src="Imagenes/VISA.png" alt="">
+        <div class="chip">
+         <img src="Imagenes/chip.png" alt="">
+        </div>
+
+       <div class="informacion">
+                            
+        <div class="grupo" id="numero tarjeta"> 
+         <p class="etiqueta">Número de tarjeta</p>
+         <p class="digitos">#### #### #### ####</p>
+        </div>
+                            
+        <div class="flexbox">
+         <div class="grupo" id="nombre th"> 
+          <p class="etiqueta">Tarjetahabiente</p>
+          <p class="nombre">xxxxx xxxxx</p>
+        </div>
+
+        <div class="grupo" id="exp"> 
+        <p class="etiqueta">EXP</p>
+        <p class="exp"> MM / AA </p>
+        </div>
+        </div>                               
+        </div>  
+      </div>                     
+     </div>
+
+   <div class="trasera"> 
+    <div class="bmagnetica"></div>
+    <div class="información">
+      <div class="grupo" id="firma"></div>
+        <p class="etiqueta">Firma</p>
+        <div class="firma"><p></p></div>
+      </div>
+    <div class="grupo" id="cvv">
+      <p class="etiqueta">CVV</p>
+      <p class="ccv"></p>    
+    </div>
+   </div>
+
+   </section>
+
+   <!-- formulario -->
+
+   <div class="numeracion">
+    <input id="cardNumber" class="cardnumber" type="text" placeholder="Ingresa tu tarjeta" maxlength="16">
+  </div>
+   
+  <div class="nombre"> 
+    <input id="nombre" class="nombre" type="text" placeholder="Ingresa tu nombre" maxlength="10">
+  </div>
+
+  <button id="botonValidar">Validar</button>
+   
+
+
+</div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
