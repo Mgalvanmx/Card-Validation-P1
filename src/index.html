@@ -9,70 +9,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+ <body>
       
   <div class="contenedor">
    <section class="tarjeta" id="tarjeta">
-     <div class="frontal">
-      <div class="visa">
-       <img src="Imagenes/VISA.png" alt="">
-        <div class="chip">
-         <img src="Imagenes/chip.png" alt="">
-        </div>
-
-       <div class="informacion">
-                            
+     <div class="visa" id="logo-marca">
+      <!-- <img src="Imagenes/VISA.png" alt=""> -->
+     </div> 
+     <div class="chip">
+      <img src="Imagenes/chip.png" alt="">  
+     </div>    
+        <div class="informacion">                            
         <div class="grupo" id="numero tarjeta"> 
          <p class="etiqueta">Número de tarjeta</p>
-         <p class="digitos">#### #### #### ####</p>
+         <p class="digitos">0000 0000 0000 0000</p>
         </div>
                             
-        <div class="flexbox">
-         <div class="grupo" id="nombre th"> 
-          <p class="etiqueta">Tarjetahabiente</p>
-          <p class="nombre">xxxxx xxxxx</p>
-        </div>
-
-        <div class="grupo" id="exp"> 
-        <p class="etiqueta">EXP</p>
-        <p class="exp"> MM / AA </p>
-        </div>
+        <div class="informacion">
+         <div class="grupo" id="nombre"> 
+          <p class="etiqueta">Nombre</p> 
+          <p class="nombreth">xxxxx xxxxx</p>
+         </div>
         </div>                               
-        </div>  
-      </div>                     
-     </div>
-
-   <div class="trasera"> 
-    <div class="bmagnetica"></div>
-    <div class="información">
-      <div class="grupo" id="firma"></div>
-        <p class="etiqueta">Firma</p>
-        <div class="firma"><p></p></div>
-      </div>
-    <div class="grupo" id="cvv">
-      <p class="etiqueta">CVV</p>
-      <p class="ccv"></p>    
-    </div>
-   </div>
-
+    </div>  
    </section>
+  
 
    <!-- formulario -->
-
-   <div class="numeracion">
-    <input id="cardNumber" class="cardnumber" type="text" placeholder="Ingresa tu tarjeta" maxlength="16">
-  </div>
+    <form action="" id="formulario-tarjeta" class="formulario-tarjeta"> 
+     <div class="numeracion">
+      <label> Número de tarjeta </label>
+      <input id="cardNumber" class="cardnumber" type="text" placeholder="1234 5678 9123 4569 " maxlength="19">
+     </div>
    
-  <div class="nombre"> 
-    <input id="nombre" class="nombre" type="text" placeholder="Ingresa tu nombre" maxlength="10">
-  </div>
-
-  <button id="botonValidar">Validar</button>
-   
-
-
+     <div class="nombre"> 
+      <label> Nombre </label>
+      <input id="nombre" class="nombre" type="text" placeholder="Opcional" maxlength="10">
+     </div>
+     <div style="text-align: center">
+     <button id="botonValidar" class="botonValidar">Validar</button>
+    </div>
+    </form>
 </div>
 
-    <script src="index.js" type="module"></script>
-  </body>
+    <script src="index.js" type="module"></script>   
+ </body>
 </html>
