@@ -4,10 +4,11 @@ import validator from './validator.js';
 
 
 const cardNumber = document.getElementById("cardNumber")
+const nombre = document.getElementById("nombre")
 const botonValidar = document.getElementById("botonValidar")
+const logoMarca = document.getElementById("logo-marca")
 const digitos = document.querySelector("#tarjeta .digitos")
 const nombreth = document.querySelector("#tarjeta .nombreth")
-const logoMarca = document.getElementById("logo-marca")
 
 botonValidar.addEventListener("click", function(){
 if (cardNumber.value.length <16){
@@ -57,15 +58,16 @@ if(numeracion[0] == 4){
   logoMarca.appendChild(imagen);
 } 
 
+
 });
 
 //* PASAR NOMBRE A TARJETA
-nombreth.addEventListener('keyup', (e) => {
+nombre.addEventListener('keyup', (e) => {
   let name = e.target.value;
 
 nombreth.textContent = name;
  
-});
+})
 
 
 
