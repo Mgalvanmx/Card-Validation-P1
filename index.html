@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+ <body>
+      
+  <div class="contenedor">
+   <section class="tarjeta" id="tarjeta">
+     <div class="visa" id="logo-marca">
+      <!-- <img src="Imagenes/VISA.png" alt=""> -->
+     </div> 
+     <div class="chip">
+      <img src="Imagenes/chip.png" alt="">  
+     </div>    
+      <div class="informacion">                            
+        <div class="grupo" id="numero tarjeta"> 
+         <p class="etiqueta">Número de tarjeta</p>
+         <p class="digitos">0000 0000 0000 0000</p>
+        </div>                            
+        <div class="informacion">
+         <div class="grupo" id="nombre1"> 
+          <p class="etiqueta">Nombre</p> 
+          <p class="nombreth">xxxxx xxxxx</p>
+         </div>
+        </div>                               
+    </div>  
+   </section>
+  
+
+   <!-- formulario -->
+    <form action="" id="formulario-tarjeta" class="formulario-tarjeta"> 
+     <div class="numeracion">
+      <label> Número de tarjeta </label>
+      <input id="cardNumber" class="cardnumber" type="text" placeholder="1234 5678 9123 4569 " maxlength="19">
+     </div>
+   
+     <div class="nombre"> 
+      <label> Nombre </label>
+      <input id="nombre" class="nombre" type="text" placeholder="Opcional" maxlength="10">
+     </div>
+     <div class="botonValidar">
+     <button type="button" id="botonValidar" class="botonValidar">Validar</button>
+    </div>
+    </form>
+</div>
+
+    <script src="index.js" type="module"></script>   
+ </body>
+</html>
