@@ -1,5 +1,5 @@
 body{
-    background: aqua;
+    background: #7CA4D9;
 
 }
 
@@ -55,13 +55,13 @@ body{
 
 .etiqueta {
     font-size: 16px;
-    color: whitesmoke;
+    color: #BFCBD6;
     margin-bottom: 5px;
 }
 
 .digitos, .nombreth {
     text-align: left;
-    color: red;
+    color: white;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -85,13 +85,13 @@ body{
 
 .formulario-tarjeta label{    
     display: block;
-    color: gray ;
+    color: #5B799F ;
     margin-bottom: 5px;
     font-size: 20px;
 }
 
 .formulario-tarjeta input {
-    border: 2px solid gray; 
+    border: 2px solid #7CA4D9; 
     font-size: 18px;
     height: 50px;
     width: 96%;
@@ -102,10 +102,10 @@ body{
 .formulario-tarjeta .botonValidar {
     border: none;
     color: white;
-    background: #2364d2;
+    background: #5B799F;
     font-size: 22px;
     height: 50px;
-    width: 50%;
+    width: 97%;
     padding: 10px;
     border-radius: 10px;       
     box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
@@ -114,12 +114,12 @@ body{
 }
 
 .formulario-tarjeta .botonValidar:hover {
-    background: #1850b1;
+    background: #183459;
 }
 
 /* cambiar de color input*/    
 .formulario-tarjeta input:hover {
-    border: 2px solid #93bded;
+    border: 2px solid #5B799F;
 }
 
 .formulario-tarjeta input {
